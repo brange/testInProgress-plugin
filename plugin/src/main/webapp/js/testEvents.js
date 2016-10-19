@@ -302,7 +302,7 @@ var TestRun = (function($) {
 					}
 				}
 				if (childNode.testStatus == TestRun.TestStatus.FAILED
-						|| childNode.testStatus == TestRun.TestStatus.FAILED.ERROR) {
+						|| childNode.testStatus == TestRun.TestStatus.ERROR) {
 					parentTestStatus = TestRun.TestStatus.FAILED;
 				}
 				elapsedTime += childNode.elapsedTime;
