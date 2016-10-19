@@ -261,6 +261,7 @@ var TestRun = (function($) {
 			this.currentNode.testStatus = TestRun.TestStatus.ERROR;
 			this.currentNode.elapsedTime = 0;
 			this.updateNode(this.currentNode);
+			this.updateParentNode(this.currentNode);
 			this.currentNode.trace = event.trace;
 		},
 		handleTestEndEvent : function(event) {
